@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Draw</title>
     <link href="css/site.css" rel="Stylesheet" type="text/css" />
-    <script type="text/javascript" src="js/drawing.js"></script>
+    <script type="text/javascript" src="js/draw.js"></script>
 </head>
 <body>
     <div id="divWholePage">
@@ -16,13 +16,10 @@
                     <td colspan="1">&nbsp;&nbsp;Color</td>
                 </tr>
                 <tr>
-                    <td><div class="divButton" title="Click here to save the image to disk."><img id="buttonSave" src="images/saveIcon.png" onclick="savecanvas()" width="32" height="32" class="imgButton" /></div></td>
-
-                    <td><div class="divButton" title="Click here to clear the image."><img id="buttonNew" src="images/newIcon.png" onclick="clearcanvas()" width="32" height="32" class="imgButton" /></div></td>
-
+                    <td><div class="divButton" title="Click here to save the image to disk."><img id="buttonSave" src="images/iconSave.png" onclick="savecanvas()" width="32" height="32" class="imgButton" /></div></td>
+                    <td><div class="divButton" title="Click here to clear the image."><img id="buttonNew" src="images/iconNew.png" onclick="clearcanvas()" width="32" height="32" class="imgButton" /></div></td>
                     <td><input type="range" min="1" max="20" value="1" class="slider" id="myRange" onchange="changeThickness(this.value)"></td>
-
-                    <td><div class="divButton" title="Click here to change the pen color."><img id="buttonColor" src="images/penIcon.png" onclick="showColorPicker()" width="32" height="32" class="imgButton" /></div></td>
+                    <td><div class="divButton" title="Click here to change the pen color."><img id="buttonColor" src="images/iconPen.png" onclick="showColorPicker()" width="32" height="32" class="imgButton" /></div></td>
                 </tr>
             </table>
         </div>
@@ -31,7 +28,6 @@
             </canvas>
         </div>
     </div>
-
     <div id="divColorPickerModal">
         <div id="divColorPicker">
             <table>
@@ -56,6 +52,5 @@
             </table>
         </div>
     </div>
-    <script>initialise()</script>
 </body>
 </html>

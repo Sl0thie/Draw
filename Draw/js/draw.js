@@ -12,6 +12,10 @@ var colorChangeGreen;
 var colorChangeBlue;
 var colorDisplay;
 
+window.onload = function () {
+    initialise();
+}
+
 function initialise() {
     canvas = document.getElementById('canvas');
     context = canvas.getContext('2d');
